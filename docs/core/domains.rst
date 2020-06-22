@@ -151,17 +151,17 @@ buttons as well:
 
 .. code-block:: yaml
 
-   responses:
-     utter_greet:
-     - text: "Hey! How are you?"
-       buttons:
-       - title: "great"
-         payload: "great"
-       - title: "super sad"
-         payload: "super sad"
-     utter_cheer_up:
-     - text: "Here is something to cheer you up:"
-       image: "https://i.imgur.com/nGF1K8f.jpg"
+response:
+  user_greet:
+  - buttons:
+    - payload : "great"
+       title: "great"
+    - payload : "super sad"
+       title: "super sad"
+  text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
 
 .. note::
 
